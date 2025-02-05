@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: symphony script, semi-serif;
+    background-color: #C77986;
+    transition: background 0.2s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #F0D8D8;
+    color: black;
+    font-family: symphony script, semi-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #C77986;
+}
+
+.hero {
+    padding: 200px;
+    background: url('DECOR BACK.jpg') center/cover;
+    color: BLACK;
+    font-family: symphony script, semi-serif;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Gallery */
+#gallery {
+    text-align: center;
+    font-family: symphony script, semi-serif;
+    padding: 50px 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-container img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 0;
+}
+
+/* Services */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #F0D8D8;
+}
+
+.contact-item p {
+    margin: 20px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: #F0D8D8;
+}
+button:hover {
+    background: #ff9900;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
